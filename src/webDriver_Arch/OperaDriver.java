@@ -1,31 +1,25 @@
 package webDriver_Arch;
 
 public class OperaDriver implements WebDriver {
-	
-	public OperaDriver() {
 
+	public OperaDriver() {
 		System.out.println("Launching opera browser");
 	}
 
 	@Override
 	public void click(String element) {
 		System.out.println("clicking on the element" + element);
-
 	}
 
 	@Override
 	public String getUrl(String url) {
-		
-		System.out.println("Launching the url "+ url);
-		
+		System.out.println("Launching the url " + url);
 		return url;
-		
 	}
 
 	@Override
 	public String getTitle(String title) {
-		System.out.println("The title is "+ title);
-		
+		System.out.println("The title is " + title);
 		return title;
 	}
 
@@ -37,19 +31,15 @@ public class OperaDriver implements WebDriver {
 	@Override
 	public void findElement(String ele) {
 		System.out.println("Finding the element " + ele);
-
 	}
 
 	@Override
 	public void findElements(String ele) {
-
 		System.out.println("Finding the elements " + ele);
-
 	}
 
 	@Override
 	public void quit() {
-		System.out.println("Closing the browser.");		
+		System.out.println("Closing the browser.");
 	}
-
 }
